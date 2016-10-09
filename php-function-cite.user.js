@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         PHP.Net Function Cite
-// @version      1.0
-// @description  Adds cite buttons to the function documentation pages on PHP.net.
+// @version      1.0.1
+// @description  Adds cite buttons to the function documentation pages on PHP.net
 // @author       Yani
 // @match        http://php.net/manual/*/function.*.php
 // @match        https://secure.php.net/manual/*/function.*.php
@@ -30,7 +30,7 @@ var HTML_theColor = "#1692FF";
         $(".edit-bug > a:nth-child(1)").fadeOut("fast").fadeIn( "fast");
     });
     
-    $('#citeFuntionHTML').click(function(e){
+    $('#citeFuncHTML').click(function(e){
         e.preventDefault();
         GM_setClipboard((HTML_addColor) ?
                         "<a href=\"" + theURL + "\" style=\"color:" + HTML_theColor + "\">" + funcName + "</a>" :

@@ -1,17 +1,18 @@
 // ==UserScript==
 // @name         PHP.Net Function Cite
-// @version      1.0.1
+// @version      1.0.2
 // @description  Adds cite buttons to the function documentation pages on PHP.net
 // @author       Yani
 // @match        http://php.net/manual/*/function.*.php
+// @match        http://*.php.net/manual/*/function.*.php
 // @match        https://secure.php.net/manual/*/function.*.php
 // @grant        GM_setClipboard
 // ==/UserScript==
 
 // Config:
-var BBCode_addColor = true;
+var BBCode_addColor = false;
 var BBCode_theColor = "#1692FF";
-var HTML_addColor = true;
+var HTML_addColor = false;
 var HTML_theColor = "#1692FF";
 
 (function() {
